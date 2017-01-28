@@ -1,3 +1,82 @@
-body{
-    font-family: 'Roboto', sans-serif;
-  }
+body {
+  font-family: 'Roboto', "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283136;
+}
+
+.nav {
+  font-family: 'Roboto', "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.features-name {
+  font-family: 'Roboto', "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.slider-item-title {
+  font-family: 'Roboto', "Arial", sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+/*стили кнопок*/
+
+.btn {
+  font-family: 'Roboto', "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fb565a;
+}
+
+.btn-filter {
+  color: #000000;
+  background: #eeeeee;
+}
+
+
+/*стили каталога*/
+
+.filter-form-title, .catalog-info-title {
+  font-family: 'Roboto', "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-info-description {
+  line-height: 18px;
+  color: #666666;
+}
+
+
+/*
+.btn {
+    display: block;
+    width: 160px;
+    margin: 20px auto;
+    padding: 12px;
+    color: white;
+    background: #34495e;
+    border-radius: 5px;
+    cursor: pointer;
+}*/
