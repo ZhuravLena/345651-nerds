@@ -1,68 +1,175 @@
-body {
-  font-family: 'Roboto', "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #283136;
-}
+    body {
+      font-family: 'Roboto', "Arial", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #283136;
+    }
+    /* для наглядности*/
 
-.nav {
-  line-height: 30px;
-  font-weight: 500;
-  color: #000000;
-  text-transform: uppercase;
-}
+    .footer-info, .footer-social, .footer, .map-contacts, .footer-map, .main-header, .slider, .logo, .nav, .user-block, .slider, .features-item, .index-content-left, .index-content-right {
+      background: rgba(255, 45, 82, 0.2);
+    }
 
-.features-name {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-}
+    .container {
+      border: 1px dotted #3e6dc4;
+    }
 
-.slider-item-title {
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-  color: #000000;
-}
+    .slider-item-math, .slider-item-worktime {
+      display: none;
+    }
+    /*.slider-item-design {
+ background-image: url(/example/image/bg.jpg);
+    }*/
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .container {
+      width: 1160px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    .logo {
+      float: left;
+      width: 180px;
+      margin-right: 20px;
+    }
+
+    .nav {
+      float: left;
+      width: 760px;
+      line-height: 30px;
+      font-weight: 500;
+      color: #000000;
+      text-transform: uppercase;
+    }
+
+    .user-block {
+      float: right;
+      width: 180px;
+    }
+
+    .slider-item-design {
+      background-image: url("/img/nerds-index-slide1.png");
+    }
+
+    .slider-item-title {
+      font-size: 55px;
+      line-height: 55px;
+      font-weight: 500;
+      color: #000000;
+    }
+
+    .main-header {
+      margin-bottom: 80px;
+    }
+
+    .features {
+      margin-bottom: 80px;
+    }
+
+    .features-item {
+      float: left;
+      width: 360px;
+      margin-right: 40px;
+    }
+
+    .features-item:last-child {
+      margin-right: 0px;
+    }
+
+    .features-name {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 700;
+      color: #000000;
+      text-transform: uppercase;
+    }
+
+    .index-content-left {
+      float: left;
+      width: 760px;
+      padding-top: 40px;
+    }
+
+    .index-content-right {
+      float: right;
+      width: 360;
+    }
+
+    .index-content {
+      margin-bottom: 72px;
+      border-top: 2px solid #f4f4f4;
+    }
+
+    .clients-logo li {
+      filter: alpha (opcity=20);
+      opacity: 0.2;
+    }
+
+    .clients-logo {
+      margin-bottom: 44px;
+      border-top: 2px solid #f4f4f4;
+    }
+
+    .map-contacts {
+      padding-top: 54px;
+      width: 320px;
+    }
+
+    .footer {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .footer-social {
+      float: left;
+      width: 260px;
+      padding-left: 0;
+    }
+
+    .footer-info {
+      float: right;
+      width: 760px;
+    }
+    /*стили кнопок*/
+    
+    .btn {
+      line-height: 18px;
+      font-weight: 500;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #fb565a;
+    }
+
+    .btn-filter {
+      color: #000000;
+      background: #eeeeee;
+    }
+    /*стили каталога*/
+
+    .filter-form-title, .catalog-info-title {
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 700;
+      color: #000000;
+      text-transform: uppercase;
+    }
+
+    .catalog-info-description {
+      line-height: 18px;
+      color: #666666;
+    }
+    /*
+    border-top: 2px solid #f4f4f4;
 
 
-/*стили кнопок*/
-
-.btn {
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #fb565a;
-}
-
-.btn-filter {
-  color: #000000;
-  background: #eeeeee;
-}
-
-
-/*стили каталога*/
-
-.filter-form-title, .catalog-info-title {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.catalog-info-description {
-  line-height: 18px;
-  color: #666666;
-}
-
-
-/*
 .btn {
     display: block;
     width: 160px;

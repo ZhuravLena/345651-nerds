@@ -10,7 +10,7 @@
 
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <div class="logo">
         <img src="img/nerds-logo.png" alt="логотип" width="160" height="65">
       </div>
@@ -29,14 +29,13 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <div class="user-block">
-          <a class="purchase" href="#">Корзина</a>
-        </div>
       </nav>
+      <div class="user-block">
+        <a class="purchase" href="#">Корзина</a>
+      </div>
     </div>
 
-
-    <div class="container">
+    <div class="container clearfix">
       <div class="slider">
         <div class="slider-item slider-item-design">
           <h2 class="slider-item-title">Долго, дорого, скрупулезно.</h2>
@@ -55,15 +54,13 @@
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a class="btn" title="Узнать больше" href="#">Узнать больше</a>
         </div>
-
-
       </div>
     </div>
   </header>
 
-  <div class="container">
+  <div class="container ">
 
-    <section class="features">
+    <section class="features clearfix">
       <div class="features-item">
         <div class="features-item-red">
           <img src="img/features-red.png" alt="Веб-сайты" width="300" height="146">
@@ -91,7 +88,7 @@
     </section>
 
 
-    <div class="index-content">
+    <div class="index-content clearfix">
       <div class="index-content-left">
         <h3 class="index-content-title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h3>
         <p>
@@ -125,7 +122,7 @@
       </div>
     </div>
 
-    <div class="clients-logo">
+    <div class="clients-logo clearfix">
       <ul>
         <li>
           <a title="html-academy" href="#">
@@ -164,24 +161,27 @@
   </div>
 
   <footer>
-    <div class="container">
-      <div class="footer-map">
+    <div class="footer-map">
+      <div class="container clearfix">
         <a title="карта проезда" href="#">
           <img src="img/map.png" alt="карта проезда" width="1440" height="416">
         </a>
+
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-info">
+          <p class="footer-info-title">Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+
       </div>
-      <section class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </section>
-      <section class="footer-info">
-        <p class="footer-info-title">Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
     </div>
   </footer>
 
+  <!--
   <div class="popup-write-us">
     <h2 class="popup-write-us-title">Напишите нам</h2>
     <a href="#" class="popup-close"></a>
@@ -201,7 +201,7 @@
       <button class="btn" type="submit">Отправить</button>
     </form>
   </div>
-
+-->
 </body>
 
 </html>
