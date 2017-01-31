@@ -7,20 +7,18 @@
     }
     /* для наглядности*/
 
-    .footer-info, .footer-social, .footer, .map-contacts, .footer-map, .main-header, .slider, .logo, .nav, .user-block, .slider, .features-item, .index-content-left, .index-content-right {
+    .catalog-item, .catalog-content, .filters, .catalog-title, .clients-logo, .footer-info, .footer-social, .footer, .map-contacts, .footer-map, .slider, .logo, .nav, .user-block, .features-item, .index-content-left, .index-content-right {
       background: rgba(255, 45, 82, 0.2);
     }
 
     .container {
       border: 1px dotted #3e6dc4;
     }
+    /* для наглядности*/
 
     .slider-item-math, .slider-item-worktime {
       display: none;
     }
-    /*.slider-item-design {
- background-image: url(/example/image/bg.jpg);
-    }*/
 
     .clearfix::after {
       content: "";
@@ -33,10 +31,17 @@
       margin: 0 auto;
       padding: 0 10px;
     }
+    /* header*/
+
+    .main-header {
+      margin-bottom: 80px;
+    }
 
     .logo {
       float: left;
       width: 180px;
+      padding-top: 49px;
+      padding-bottom: 18px;
       margin-right: 20px;
     }
 
@@ -47,15 +52,32 @@
       font-weight: 500;
       color: #000000;
       text-transform: uppercase;
+      text-align: center;
+    }
+
+    .nav li {
+      list-style-type: none;
+      position: relative;
+      display: inline-block;
+      margin-right: 46px;
     }
 
     .user-block {
       float: right;
       width: 180px;
+      padding-top: 82px;
+      padding-bottom: 33px;
     }
 
+    .slider {
+      clear: both;
+      width: 1160px;
+      padding-top: 49px;
+    }
+    /* проблема с фоновой картинкой*/
+
     .slider-item-design {
-      background-image: url("/img/nerds-index-slide1.png");
+      background-image: url("img/nerds-index-slide1.png") no-repeat 0 100%;
     }
 
     .slider-item-title {
@@ -64,10 +86,7 @@
       font-weight: 500;
       color: #000000;
     }
-
-    .main-header {
-      margin-bottom: 80px;
-    }
+    /* features*/
 
     .features {
       margin-bottom: 80px;
@@ -90,62 +109,89 @@
       color: #000000;
       text-transform: uppercase;
     }
+    /* content*/
+
+    .index-content {
+      margin-bottom: 70px;
+      border-top: 2px solid #f4f4f4;
+    }
 
     .index-content-left {
       float: left;
       width: 760px;
-      padding-top: 40px;
+      padding-top: 75px;
     }
 
     .index-content-right {
       float: right;
       width: 360;
+      padding-top: 41px;
     }
-
-    .index-content {
-      margin-bottom: 72px;
-      border-top: 2px solid #f4f4f4;
-    }
+    /* logos*/
 
     .clients-logo li {
+      list-style-type: none;
+      position: relative;
+      display: inline-block;
+      margin-right: 46px;
       filter: alpha (opcity=20);
       opacity: 0.2;
     }
 
     .clients-logo {
-      margin-bottom: 44px;
+      padding-top: 48px;
+      padding-bottom: 44px;
       border-top: 2px solid #f4f4f4;
+      border-bottom: 2px solid #f4f4f4;
+    }
+    /* contacts*/
+
+    .map {
+      margin-top: 80px;
     }
 
     .map-contacts {
-      padding-top: 54px;
+      padding: 50px 50px 48px 50px;
       width: 320px;
     }
+    /* footer*/
 
-    .footer {
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
+    .footer {}
 
     .footer-social {
       float: left;
       width: 260px;
-      padding-left: 0;
+      padding-top: 70px;
+      padding-bottom: 70px;
     }
 
     .footer-info {
       float: right;
       width: 760px;
+      padding-top: 70px;
+      padding-bottom: 70px;
     }
     /*стили кнопок*/
-    
+
     .btn {
+      display: block;
+      padding: 18px;
+      border-radius: 5px;
       line-height: 18px;
       font-weight: 500;
       color: #ffffff;
+      text-align: center;
       text-transform: uppercase;
       text-decoration: none;
       background: #fb565a;
+    }
+
+    .btn-green {
+      background: #00ca74;
+    }
+
+    .btn-yellow {
+      background: #efc849;
     }
 
     .btn-filter {
@@ -153,6 +199,28 @@
       background: #eeeeee;
     }
     /*стили каталога*/
+
+    .catalog-header {
+      margin-bottom: 55px;
+      background: #eeeeee;
+    }
+
+    .catalog-title {
+      clear: both;
+      width: ;
+      padding-top: 57px;
+      padding-bottom: 105px;
+    }
+
+    .filters {
+      float: left;
+      width: 260px;
+    }
+
+    .catalog-content {
+      float: right;
+      width: 760px;
+    }
 
     .filter-form-title, .catalog-info-title {
       font-size: 18px;
