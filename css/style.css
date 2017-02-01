@@ -161,7 +161,7 @@
     }
     /* contacts*/
 
-    .map-wrapper {
+    .map {
       margin-top: 80px;
       background: url("../img/map.png") 100% 100% no-repeat;
       min-height: 416px;
