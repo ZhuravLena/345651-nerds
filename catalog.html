@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс каталог</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -35,8 +36,8 @@
       <div class="user-block">
         <a class="purchase" href="#">Корзина</a>
       </div>
+      <h2 class="catalog-title">Магазин готовых шаблонов</h2>
     </div>
-    <h2 class="catalog-title">Магазин готовых шаблонов</h2>
   </header>
 
   <main class="container clearfix">
@@ -53,15 +54,15 @@
         <p class="filter-form-title">Сетка</p>
         <ul class="filter-list">
           <li>
-            <input type="radio" name="adapt" value="Адаптивная" id="adapt" placeholder="Адаптивная">
+            <input type="radio" name="grid-type" value="Адаптивная" id="adapt" placeholder="Адаптивная">
             <label for="adapt">Адаптивная</label>
           </li>
           <li>
-            <input type="radio" name="fixed" value="Фиксированная" id="fixed" placeholder="Фиксированная">
+            <input type="radio" name="grid-type" value="Фиксированная" id="fixed" placeholder="Фиксированная">
             <label for="fixed">Фиксированная</label>
           </li>
           <li>
-            <input type="radio" name="fluid" value="Резиновая" id="fluid" placeholder="Резиновая">
+            <input type="radio" name="grid-type" value="Резиновая" id="fluid" placeholder="Резиновая">
             <label for="fluid">Резиновая</label>
           </li>
         </ul>
@@ -115,14 +116,14 @@
             </li>
           </ul>
       </div>
-      <div class="catalog-wrapper">
+      <div class="catalog-wrapper clearfix">
         <div class="catalog-item">
           <div class="catalog-header">
             <span></span><span></span><span></span>
           </div>
           <img src="img/img-sedona.jpg" alt="макет Sedona" width="360" height="576">
           <div class="catalog-info">
-            <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Sedona</а>
+            <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Sedona</a>
             <p class="catalog-info-description">Информационный сайт для туристов</p>
             <a class="btn" href="#">9900 руб</a>
           </div>
@@ -194,24 +195,41 @@
     </div>
   </main>
 
-  <div class="map">
-    <div class="map-wrapper"></div>
-    <div class="container">
-      <section class="map-contacts">
-        <p class="map-conacts-title">NЁRDS DESIGN STUDIO</p>
-        <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="btn" href="#">Напишите нам</a>
+  <footer>
+    <div class="map">
+      <div class="map-wrapper ">
+        <section class="map-contacts">
+          <p class="map-conacts-title">NЁRDS DESIGN STUDIO</p>
+          <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn" href="#">Напишите нам</a>
+        </section>
+      </div>
+    </div>
+    <div class="container clearfix">
+      <section class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-info">
+        <p class="footer-info-title">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </div>
-  </div>
 
-  <footer>
-    <div class="container">
-      <div class="footer-map">
-        <a title="карта проезда" href="#">
-          <img src="img/map.png" alt="карта проезда" width="1440" height="416">
-        </a>
+    <!--  <div class="container clearfix">
+      <div class="map">
+        <div class="map-wrapper">
+
+          <section class="map-contacts">
+            <p class="map-conacts-title">NЁRDS DESIGN STUDIO</p>
+            <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a class="btn" href="#">Напишите нам</a>
+          </section>
+
+        </div>
       </div>
       <section class="footer-social">
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -223,7 +241,10 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </div>
+    -->
+
   </footer>
+
 
 </body>
 

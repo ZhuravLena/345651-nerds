@@ -45,9 +45,15 @@
       margin-right: 20px;
     }
 
-    .nav {
+    ul {
+      margin: 0;
+    }
+
+    .nav, .user-block {
       float: left;
       width: 760px;
+      padding-top: 82px;
+      margin-right: 20px;
       line-height: 30px;
       font-weight: 500;
       color: #000000;
@@ -56,28 +62,39 @@
     }
 
     .nav li {
-      list-style-type: none;
-      position: relative;
       display: inline-block;
       margin-right: 46px;
     }
 
     .user-block {
-      float: right;
+      /*    float: right;*/
       width: 180px;
-      padding-top: 82px;
-      padding-bottom: 33px;
+      margin-right: 0;
+      /*  padding-top: 82px;
+      padding-bottom: 33px;*/
     }
+    /*поля у h2 ul {
+      margin: 0
+    }*/
+
+    h2 {
+      margin: 0
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    /* слайдер*/
 
     .slider {
       clear: both;
       width: 1160px;
-      padding-top: 49px;
     }
-    /* проблема с фоновой картинкой*/
 
     .slider-item-design {
-      background-image: url("img/nerds-index-slide1.png") no-repeat 0 100%;
+      background: url("../img/nerds-index-slide1.png") 100% 100% no-repeat;
+      min-height: 431px;
     }
 
     .slider-item-title {
@@ -131,23 +148,23 @@
 
     .clients-logo li {
       list-style-type: none;
-      position: relative;
       display: inline-block;
-      margin-right: 46px;
+      width: 24%;
+      text-align: center;
       filter: alpha (opcity=20);
       opacity: 0.2;
     }
 
     .clients-logo {
-      padding-top: 48px;
-      padding-bottom: 44px;
       border-top: 2px solid #f4f4f4;
       border-bottom: 2px solid #f4f4f4;
     }
     /* contacts*/
 
-    .map {
+    .map-wrapper {
       margin-top: 80px;
+      background: url("../img/map.png") 100% 100% no-repeat;
+      min-height: 416px;
     }
 
     .map-contacts {
@@ -220,6 +237,15 @@
     .catalog-content {
       float: right;
       width: 760px;
+    }
+
+    .catalog-item {
+      display: inline-block;
+      width: 360px;
+    }
+
+    .catalog-item:nth-child(odd) {
+      margin-right: 36px;
     }
 
     .filter-form-title, .catalog-info-title {
