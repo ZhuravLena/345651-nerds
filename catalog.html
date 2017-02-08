@@ -26,7 +26,7 @@
             <a href="#">Клиенты</a>
           </li>
           <li>
-            <a href="#">Магазин</a>
+            <a class="active">Магазин</a>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -46,8 +46,18 @@
       <form class="filter-grid-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="filter-price">
           <b class="filter-title">СТОИМОСТЬ:</b>
-          <div>
-            слайдер
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 20%; width: 30%"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
           </div>
         </div>
 
@@ -95,92 +105,97 @@
 
     <div class="catalog-content">
       <div class="sort">
-        <p class="sort-title">Сортировать:
-          <ul>
-            <li>
-              <a href="#">По цене</a>
-            </li>
-            <li>
-              <a href="#">По типу</a>
-            </li>
-            <li>
-              <a href="#">По названию</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#"></a>
-            </li>
-            <li>
-              <a href="#"></a>
-            </li>
-          </ul>
+
+        <ul class="sort-parametr">
+          <li>Сортировать:
+          </li>
+          <li>
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По названию</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
       </div>
       <div class="catalog-wrapper clearfix">
         <div class="catalog-item">
-          <div class="catalog-header">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
-          <img src="img/img-sedona.jpg" alt="макет Sedona" width="360" height="576">
+          <img class="catalog-item-image" src="img/img-sedona.jpg" alt="макет Sedona" width="360" height="576">
           <div class="catalog-info">
             <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Sedona</a>
-            <p class="catalog-info-description">Информационный сайт для туристов</p>
-            <a class="btn" href="#">9900 руб</a>
+            <p class="catalog-info-description">Информационный сайт
+              <br>для туристов</p>
+            <a class="btn btn-catalog-info" href="#">9900 руб</a>
           </div>
         </div>
         <div class="catalog-item">
-          <div class="catalog-header">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
-          <img src="img/img-pink.jpg" alt="макет Pink app" width="360" height="576">
+          <img class="catalog-item-image" src="img/img-pink.jpg" alt="макет Pink app" width="360" height="576">
           <div class="catalog-info">
             <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Pink app</a>
             <p class="catalog-info-description">Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="btn" href="#">9900 руб</a>
+            <a class="btn btn-catalog-info" href="#">9900 руб</a>
           </div>
         </div>
         <div class="catalog-item">
-          <div class="catalog-header">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
           <img src="img/img-barbershop.jpg" alt="макет Barbershop" width="360" height="576">
           <div class="catalog-info">
             <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Barbershop</a>
-            <p class="catalog-info-description">Сайт салоны красоты. Для мужчин, да.</p>
-            <a class="btn" href="#">9900 руб</a>
+            <p class="catalog-info-description">Сайт салоны красоты.
+              <br>Для мужчин, да.</p>
+            <a class="btn btn-catalog-info" href="#">9900 руб</a>
           </div>
         </div>
         <div class="catalog-item">
-          <div class="catalog-header">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
           <img src="img/img-mishka.jpg" alt="макет Mishka" width="360" height="576">
           <div class="catalog-info">
             <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Mishka</a>
-            <p class="catalog-info-description">Интернет-магазин вязаных игрушек</p>
-            <a class="btn" href="#">9900 руб</a>
+            <p class="catalog-info-description">Интернет-магазин
+              <br>вязаных игрушек</p>
+            <a class="btn btn-catalog-info" href="#">9900 руб</a>
           </div>
         </div>
         <div class="catalog-item">
-          <div class="catalog-header">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
           <img src="img/img-aplus.jpg" alt="макет A Plus" width="360" height="576">
           <div class="catalog-info">
             <a class="catalog-info-title" title="рассмотреть подробнее" href="#">A Plus</a>
             <p class="catalog-info-description">Лендинг курсов повышения квалификации</p>
-            <a class="btn" href="#">9900 руб</a>
+            <a class="btn btn-catalog-info" href="#">9900 руб</a>
           </div>
         </div>
         <div class="catalog-item">
-          <div class="catalog-header">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
           <img src="img/img-kvast.jpg" alt="макет Кваст" width="360" height="576">
           <div class="catalog-info">
             <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Кваст</a>
             <p class="catalog-info-description">Промо-сайт производителя крафтового кваса</p>
-            <a class="btn" href="#">9900 руб</a>
+            <a class="btn btn-catalog-info" href="#">9900 руб</a>
           </div>
         </div>
       </div>
@@ -197,12 +212,12 @@
 
   <footer>
     <div class="map">
-      <div class="container">
+      <div class="container contacts">
         <section class="map-contacts">
-          <p class="map-conacts-title">NЁRDS DESIGN STUDIO</p>
-          <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn" href="#">Напишите нам</a>
+          <p class="map-contacts-title">NЁRDS DESIGN STUDIO</p>
+          <p class="map-contacts-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+          <p class="map-contacts-phone">тел. +7 (812) 275-75-75</p>
+          <a class="btn btn-write-us" href="#">Напишите нам</a>
         </section>
       </div>
     </div>
