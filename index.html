@@ -190,7 +190,8 @@
   <div class="modal-write-us">
     <button class="modal-write-us-close" type="button" title="Закрыть">Закрыть</button>
     <h2 class="modal-write-us-title">Напишите нам</h2>
-    <a href="#" class="modal-write-us-close"></a>
+    <a href="#"></a>
+
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <label for="write-name">
             <span class="write">Ваше имя</span>
@@ -208,6 +209,23 @@
     </form>
   </div>
 
+  <script>
+    var link = document.querySelector(".btn-write-us");
+
+    var popup = document.querySelector(".modal-write-us");
+    var close = popup.querySelector(".modal-write-us-close");
+
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("modal-write-us-show");
+    });
+
+    close.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.remove("modal-write-us-show");
+    });
+
+  </script>
 
 </body>
 

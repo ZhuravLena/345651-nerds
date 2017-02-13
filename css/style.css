@@ -13,6 +13,7 @@ body {
 .catalog-item, .catalog-content, .filters, .catalog-title, .clients-logo, .footer-info, .footer-social, .footer, .map-contacts, .footer-map, .slider, .logo, .nav, .user-block, .features-item, .index-content-left, .index-content-right {
   background: rgba(255, 45, 82, 0.2);
 }
+<a href="#" class="modal-write-us-close"></a>
 
 
     .container {
@@ -86,8 +87,8 @@ img {
 .logo {
   float: left;
   width: 160px;
-  padding-top: 50px;
-  padding-bottom: 0;
+  margin-top: 49px;
+  margin-bottom: 0;
   margin-right: 20px;
 }
 
@@ -109,7 +110,7 @@ img {
   float: left;
   width: 800px;
   margin-right: 20px;
-  padding-top: 82px;
+  margin-top: 75px;
   line-height: 30px;
   font-weight: 500;
   color: #000000;
@@ -118,7 +119,7 @@ img {
 }
 
 .nav a {
-  padding-bottom: 7px;
+  padding-bottom: 9px;
 }
 
 .nav a:hover {
@@ -198,7 +199,7 @@ img {
 
 .slider-controls {
   position: absolute;
-  bottom: 95px;
+  bottom: 109px;
   left: 50%;
   width: 200px;
   height: 10px;
@@ -220,7 +221,7 @@ img {
 }
 
 #btn-1:checked~.slider-controls label[for="btn-1"], #btn-2:checked~.slider-controls label[for="btn-2"], #btn-3:checked~.slider-controls label[for="btn-3"] {
-  margin: 0 13px;
+  margin: 0 12px;
   box-shadow: 0 0 0 5px white;
   width: 4px;
   height: 4px;
@@ -286,7 +287,7 @@ img {
 
 .slider-item-title, .catalog-title {
   margin: 0;
-  padding-top: 81px;
+  margin-top: 78px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -295,8 +296,8 @@ img {
 
 .slider-item {
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 40px;
   font: inherit;
 }
 
@@ -322,11 +323,10 @@ img {
 }
 
 .features-item-red, .features-item-green, .features-item-yellow {
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .features-name {
-  padding-top: 25px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -335,9 +335,7 @@ img {
 }
 
 .features-item p {
-  margin: 0;
-  padding-top: 25px;
-  padding-bottom: 35px;
+  margin: 16px 0 32px 0;
   width: 260px;
   font: inherit;
 }
@@ -378,28 +376,30 @@ img {
 /*index-content*/
 
 .index-content {
-  margin-bottom: 65px;
+  margin-bottom: 56px;
   border-top: 2px solid #f4f4f4;
 }
 
 .index-content-left {
   float: left;
   width: 760px;
-  padding-top: 75px;
+  margin-top: 72px;
 }
 
 .index-content-title {
   margin: 0;
   font-size: 45px;
-  line-height: 50px;
+  line-height: 47px;
   font-weight: 500;
   color: #000000;
 }
 
 .index-content-left p {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  margin-top: 30px;
+  margin-bottom: 47px;
+  width: 650px;
+  line-height: 24px;
 }
 
 .index-list-name {
@@ -409,10 +409,10 @@ img {
 
 .index-content-left ul {
   margin: 0;
-  padding-top: 15px;
+  margin-top: 14px;
   padding-left: 35px;
   list-style-type: none;
-  line-height: 48px;
+  line-height: 47px;
 }
 
 .index-content-left li {
@@ -425,7 +425,7 @@ img {
   width: 25px;
   height: 2px;
   left: -35px;
-  top: 15px;
+  top: 17px;
   transform: translateY(-50%);
   background: #fb565a;
 }
@@ -433,7 +433,7 @@ img {
 .index-content-right {
   float: right;
   width: 360px;
-  padding-top: 42px;
+  padding-top: 40px;
   font-size: 0px;
 }
 
@@ -448,7 +448,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #000000;
-  padding-top: 40px;
+  padding-top: 36px;
   padding-bottom: 30px;
 }
 
@@ -472,7 +472,7 @@ img {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   vertical-align: top;
 }
 
@@ -493,7 +493,7 @@ img {
   border-top: 2px solid #f4f4f4;
   border-bottom: 2px solid #f4f4f4;
   font-size: 0px;
-  margin-bottom: 65px;
+  margin-bottom: 78px;
 }
 
 .clients-logo ul {
@@ -579,7 +579,7 @@ img {
 
 .map-contacts-title {
   margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -588,13 +588,13 @@ img {
 
 .map-contacts-address, .map-contacts-phone {
   margin: 0;
-  padding-bottom: 16px;
+  margin-bottom: 17px;
   line-height: 18px;
   color: #666666;
 }
 
 .map-contacts-phone {
-  padding-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 
@@ -603,8 +603,8 @@ img {
 .footer-social {
   float: left;
   width: 300px;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .social-btn {
@@ -614,7 +614,7 @@ img {
   width: 80px;
   min-height: 80px;
   border-radius: 50%;
-  margin-right: 14px;
+  margin-right: 7px;
   font-size: 0;
   background: #e1e1e1;
 }
@@ -662,7 +662,7 @@ img {
 .footer-info {
   float: right;
   width: 760px;
-  padding-top: 75px;
+  margin-top: 76px;
 }
 
 .footer-info-title {
@@ -671,7 +671,7 @@ img {
   font-weight: 700;
   line-height: 36px;
   color: #000000;
-  padding-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .footer-info-description {
@@ -694,8 +694,8 @@ img {
 
 .catalog-title {
   clear: both;
-  padding-top: 57px;
-  padding-bottom: 105px;
+  padding-top: 78px;
+  padding-bottom: 108px;
   text-align: center;
 }
 
@@ -715,7 +715,7 @@ img {
   text-align: center;
   width: 360px;
   margin-right: 36px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   font-size: 16px;
   border-radius: 5px 5px 0 0;
   border: rgba(77, 77, 77, 0.1) 1px solid;
@@ -773,7 +773,7 @@ img {
   bottom: 0;
   left: 0;
   width: 360px;
-  padding: 30px 60px 40px 60px;
+  padding: 28px 60px 46px 60px;
   background: #eeeeee;
 }
 
@@ -798,7 +798,7 @@ img {
 
 .catalog-info-description {
   margin: 0;
-  padding: 18px 0 28px 0;
+  padding: 15px 0 30px 0;
   line-height: 18px;
   color: #666666;
 }
@@ -813,7 +813,7 @@ img {
 
 .filter-list {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 41px;
   padding: 0;
   list-style: none;
 }
@@ -825,8 +825,8 @@ input[type="radio"] {
 input[type="radio"]+label {
   position: relative;
   display: block;
-  margin: 16px 0;
-  line-height: 23px;
+  margin: 12px 0;
+  line-height: 28px;
   padding-left: 35px;
   cursor: pointer;
   color: #283136;
@@ -873,8 +873,8 @@ input[type="checkbox"] {
 input[type="checkbox"]+label {
   position: relative;
   display: block;
-  margin: 16px 0;
-  line-height: 23px;
+  margin: 14px 0;
+  line-height: 26px;
   padding-left: 35px;
   cursor: pointer;
   color: #283136;
@@ -919,7 +919,8 @@ input[type="checkbox"]:checked+label:hover::after {
 
 .range-filter {
   width: 260px;
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 55px;
 }
 
 .range-controls {
@@ -958,11 +959,11 @@ input[type="checkbox"]:checked+label:hover::after {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 15px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
@@ -973,6 +974,7 @@ input[type="checkbox"]:checked+label:hover::after {
   font-size: 16px;
   display: inline-block;
   width: 50%;
+  text-transform: uppercase;
 }
 
 .max-price {
@@ -1005,6 +1007,7 @@ input[type="checkbox"]:checked+label:hover::after {
 }
 
 .btn-filter {
+  margin-top: 46px;
   color: #000000;
   background: #eeeeee;
   width: 260px;
@@ -1069,13 +1072,10 @@ input[type="checkbox"]:checked+label:hover::after {
   opacity: 1;
 }
 
-.sort-parametr li:last-child {
-  margin-left: 20px;
-}
-
 .sort-marker-up {
   display: inline-block;
   vertical-align: middle;
+  margin-left: -3px;
   width: 0;
   height: 0;
   border-left: 4px solid transparent;
@@ -1086,7 +1086,7 @@ input[type="checkbox"]:checked+label:hover::after {
 .sort-marker-down {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 25px;
+  margin-left: 26px;
   width: 0;
   height: 0;
   border-left: 4px solid transparent;
@@ -1103,7 +1103,7 @@ input[type="checkbox"]:checked+label:hover::after {
 .pagination li {
   display: inline-block;
   vertical-align: top;
-  margin: 24px 12px 60px 0;
+  margin: 24px 7px 0px 0;
   padding: 13px 0;
   width: 50px;
   border-radius: 5px;
@@ -1116,6 +1116,7 @@ input[type="checkbox"]:checked+label:hover::after {
 
 .pagination li:last-child {
   width: 260px;
+  margin-bottom: 60px;
 }
 
 .pagination li:hover {
@@ -1150,12 +1151,17 @@ input[type="checkbox"]:checked+label:hover::after {
   position: fixed;
   bottom: 175px;
   left: 50%;
+  z-index: 20;
   width: 760px;
   margin-left: -480px;
   padding: 68px 100px 85px 100px;
   color: #000000;
   background: white;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+}
+
+.modal-write-us-show {
+  display: block;
 }
 
 .modal-write-us-close {
