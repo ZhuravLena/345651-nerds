@@ -7,20 +7,6 @@ body {
   background: white;
 }
 
-
-/* для наглядности
-
-.catalog-item, .catalog-content, .filters, .catalog-title, .clients-logo, .footer-info, .footer-social, .footer, .map-contacts, .footer-map, .slider, .logo, .nav, .user-block, .features-item, .index-content-left, .index-content-right {
-  background: rgba(255, 45, 82, 0.2);
-}
-<a href="#" class="modal-write-us-close"></a>
-
-
-    .container {
-      background: rgba(100, 0, 10, 0.2);
-    }
-    /* для наглядности*/
-
 .slider-item-math, .slider-item-worktime {
   display: none;
 }
