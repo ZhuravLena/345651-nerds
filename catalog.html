@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс каталог</title>
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="icon_customImage.js" type="text/javascript"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
@@ -42,7 +44,7 @@
 
   <main class="container clearfix">
 
-    <div class="filters ">
+    <div class="filters">
       <form class="filter-grid-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="filter-price">
           <b class="filter-form-title">СТОИМОСТЬ:</b>
@@ -105,15 +107,13 @@
 
     <div class="catalog-content">
       <div class="sort clearfix">
-
         <p class="sort-parametr-title">Сортировать:</p>
-
         <ul class="sort-parametr">
           <li>
             <a class="sort-marker-up" href="#"></a>
           </li>
           <li class="sort-active">
-            <a class="sort-marker-down " href="#"></a>
+            <a class="sort-marker-down" href="#"></a>
           </li>
           <li>
             <a href="#">По названию</a>
@@ -126,82 +126,82 @@
           </li>
         </ul>
       </div>
-      <div class="catalog-wrapper clearfix ">
-        <div class="catalog-item ">
-          <div class="catalog-item-header ">
+      <div class="catalog-wrapper clearfix">
+        <div class="catalog-item">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
-          <img class="catalog-item-image " src="img/img-sedona.jpg " alt="макет Sedona " width="360" height="576">
-          <div class="catalog-info ">
-            <a class="catalog-info-title " title="рассмотреть подробнее " href="# ">Sedona</a>
-            <p class="catalog-info-description ">Информационный сайт
+          <img class="catalog-item-image" src="img/img-sedona.jpg" alt="макет Sedona" width="360" height="576">
+          <div class="catalog-info">
+            <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Sedona</a>
+            <p class="catalog-info-description">Информационный сайт
               <br>для туристов</p>
-            <a class="btn btn-catalog-info " href="# ">9900 руб.</a>
+            <a class="btn btn-catalog-info" href="#">9900 руб.</a>
           </div>
         </div>
-        <div class="catalog-item ">
-          <div class="catalog-item-header ">
+        <div class="catalog-item">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
-          <img class="catalog-item-image " src="img/img-pink.jpg " alt="макет Pink app " width="360" height="576">
-          <div class="catalog-info ">
-            <a class="catalog-info-title " title="рассмотреть подробнее " href="# ">Pink app</a>
-            <p class="catalog-info-description ">Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="btn btn-catalog-info " href="# ">9900 руб.</a>
+          <img class="catalog-item-image" src="img/img-pink.jpg" alt="макет Pink app" width="360" height="576">
+          <div class="catalog-info">
+            <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Pink app</a>
+            <p class="catalog-info-description">Продуктовый лендинг приложения для iOS и Android</p>
+            <a class="btn btn-catalog-info" href="#">9900 руб.</a>
           </div>
         </div>
-        <div class="catalog-item ">
-          <div class="catalog-item-header ">
+        <div class="catalog-item">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
-          <img src="img/img-barbershop.jpg " alt="макет Barbershop " width="360" height="576">
-          <div class="catalog-info ">
-            <a class="catalog-info-title " title="рассмотреть подробнее " href="# ">Barbershop</a>
-            <p class="catalog-info-description ">Сайт салоны красоты.
+          <img src="img/img-barbershop.jpg" alt="макет Barbershop" width="360" height="576">
+          <div class="catalog-info">
+            <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Barbershop</a>
+            <p class="catalog-info-description">Сайт салоны красоты.
               <br>Для мужчин, да.</p>
-            <a class="btn btn-catalog-info " href="# ">9900 руб.</a>
+            <a class="btn btn-catalog-info" href="#">9900 руб.</a>
           </div>
         </div>
-        <div class="catalog-item ">
-          <div class="catalog-item-header ">
+        <div class="catalog-item">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
-          <img src="img/img-mishka.jpg " alt="макет Mishka " width="360" height="576">
-          <div class="catalog-info ">
-            <a class="catalog-info-title " title="рассмотреть подробнее " href="# ">Mishka</a>
-            <p class="catalog-info-description ">Интернет-магазин
+          <img src="img/img-mishka.jpg" alt="макет Mishka" width="360" height="576">
+          <div class="catalog-info">
+            <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Mishka</a>
+            <p class="catalog-info-description">Интернет-магазин
               <br>вязаных игрушек</p>
-            <a class="btn btn-catalog-info " href="# ">9900 руб.</a>
+            <a class="btn btn-catalog-info" href="#">9900 руб.</a>
           </div>
         </div>
-        <div class="catalog-item ">
-          <div class="catalog-item-header ">
+        <div class="catalog-item">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
-          <img src="img/img-aplus.jpg " alt="макет A Plus " width="360" height="576">
-          <div class="catalog-info ">
-            <a class="catalog-info-title " title="рассмотреть подробнее " href="# ">A Plus</a>
-            <p class="catalog-info-description ">Лендинг курсов повышения квалификации</p>
-            <a class="btn btn-catalog-info " href="# ">9900 руб.</a>
+          <img src="img/img-aplus.jpg" alt="макет A Plus" width="360" height="576">
+          <div class="catalog-info">
+            <a class="catalog-info-title" title="рассмотреть подробнее" href="#">A Plus</a>
+            <p class="catalog-info-description">Лендинг курсов повышения квалификации</p>
+            <a class="btn btn-catalog-info" href="#">9900 руб.</a>
           </div>
         </div>
-        <div class="catalog-item ">
-          <div class="catalog-item-header ">
+        <div class="catalog-item">
+          <div class="catalog-item-header">
             <span></span><span></span><span></span>
           </div>
-          <img src="img/img-kvast.jpg " alt="макет Кваст " width="360" height="576">
-          <div class="catalog-info ">
-            <a class="catalog-info-title " title="рассмотреть подробнее " href="# ">Кваст</a>
-            <p class="catalog-info-description ">Промо-сайт производителя крафтового кваса</p>
-            <a class="btn btn-catalog-info " href="# ">9900 руб.</a>
+          <img src="img/img-kvast.jpg" alt="макет Кваст" width="360" height="576">
+          <div class="catalog-info">
+            <a class="catalog-info-title" title="рассмотреть подробнее" href="#">Кваст</a>
+            <p class="catalog-info-description">Промо-сайт производителя крафтового кваса</p>
+            <a class="btn btn-catalog-info" href="#">9900 руб.</a>
           </div>
         </div>
       </div>
       <div class="pagination">
         <ul>
-          <li class="pagination-active"><a href="# " title="1 ">1</a></li>
-          <li><a href="#" title="2 ">2</a></li>
-          <li><a href="#" title="3 ">3</a></li>
+          <li class="pagination-active"><a href="#" title="1">1</a></li>
+          <li><a href="#" title="2">2</a></li>
+          <li><a href="#" title="3">3</a></li>
           <li><a href="#" title="Следующая">Следующая</a></li>
         </ul>
       </div>
@@ -210,54 +210,28 @@
 
   <footer>
     <div class="map">
-      <div class="container contacts ">
-        <section class="map-contacts ">
-          <p class="map-contacts-title ">NЁRDS DESIGN STUDIO</p>
-          <p class="map-contacts-address ">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-          <p class="map-contacts-phone ">тел. +7 (812) 275-75-75</p>
-          <a class="btn btn-write-us " href="# ">Напишите нам</a>
+      <div id="map" class="map-wrapper"></div>
+      <div class="container contacts">
+        <section class="map-contacts">
+          <p class="map-contacts-title">NЁRDS DESIGN STUDIO</p>
+          <p class="map-contacts-address">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+          <p class="map-contacts-phone">тел. +7 (812) 275-75-75</p>
+          <a class="btn btn-write-us" href="contacts.html">Напишите нам</a>
         </section>
       </div>
     </div>
-    <div class="container clearfix ">
-      <section class="footer-social ">
-        <a class="social-btn social-btn-vk " href="# ">Вконтакте</a>
-        <a class="social-btn social-btn-fb " href="# ">Фейсбук</a>
-        <a class="social-btn social-btn-inst " href="# ">Инстаграм</a>
+    <div class="container clearfix">
+      <section class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Facebook</a>
+        <a class="social-btn social-btn-inst" href="#">Instagram</a>
       </section>
-      <section class="footer-info ">
-        <p class="footer-info-title ">Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
-    </div>
-
-    <!--  <div class="container clearfix ">
-      <div class="map ">
-        <div class="map-wrapper ">
-
-          <section class="map-contacts ">
-            <p class="map-conacts-title ">NЁRDS DESIGN STUDIO</p>
-            <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-            <a class="btn " href="# ">Напишите нам</a>
-          </section>
-
-        </div>
-      </div>
-      <section class="footer-social ">
-        <a class="social-btn social-btn-vk " href="# ">Вконтакте</a>
-        <a class="social-btn social-btn-fb " href="# ">Фейсбук</a>
-        <a class="social-btn social-btn-inst " href="# ">Инстаграм</a>
-      </section>
-      <section class="footer-info ">
-        <p class="footer-info-title ">Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+      <section class="footer-info">
+        <p class="footer-info-title">Давайте дружить, это выгодно!</p>
+        <p class="footer-info-description">Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </div>
-    -->
-
   </footer>
-
 
 </body>
 
