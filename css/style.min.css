@@ -4,38 +4,38 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #283136;
-  background: white;
+  background: #fff
 }
 
 .slider-item-math, .slider-item-worktime {
-  display: none;
+  display: none
 }
 
 .clearfix::after {
   content: "";
   display: block;
-  clear: both;
+  clear: both
 }
 
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px
 }
 
-a {
+.btn, a {
   text-decoration: none;
-  color: #000000;
+  color: #000
+}
+
+.nav li, img {
+  vertical-align: top
 }
 
 img {
-  vertical-align: top;
   max-width: 100%;
-  height: auto;
+  height: auto
 }
-
-
-/* общая кнопка*/
 
 .btn {
   display: block;
@@ -46,94 +46,94 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
-  background: #fb565a;
+  background: #fb565a
 }
 
 .btn:hover {
-  background: #e74246;
+  background: #e74246
 }
 
 .btn:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
   background: #d7373b;
-  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, .1)
 }
 
-
-/* header*/
-
 .main-header {
-  background: #eeeeee;
+  background: #eee
+}
+
+.logo, .nav {
+  margin-right: 20px
 }
 
 .logo {
   float: left;
   width: 160px;
   margin-top: 49px;
-  margin-bottom: 0;
-  margin-right: 20px;
+  margin-bottom: 0
 }
 
 .logo:hover {
-  opacity: 0.8;
+  opacity: .8
 }
 
-.logo:active {
-  opacity: 0.3;
+.logo:active, .social-btn:active::before {
+  opacity: .3
 }
 
 .nav ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style-type: none
+}
+
+.nav {
+  text-align: center
 }
 
 .nav, .user-block {
   float: left;
   width: 800px;
-  margin-right: 20px;
   margin-top: 75px;
   line-height: 30px;
   font-weight: 500;
-  color: #000000;
-  text-transform: uppercase;
-  text-align: center;
+  color: #000;
+  text-transform: uppercase
 }
 
 .nav a {
-  padding-bottom: 9px;
+  padding-bottom: 9px
 }
 
-.nav a:hover {
-  color: #fb565a;
+.nav a:hover, .purchase:hover {
+  color: #fb565a
 }
 
-.nav a:active {
-  color: rgba(0, 0, 0, 0.3);
+.nav a:active, .pagination li:active a, .purchase:active {
+  color: rgba(0, 0, 0, .3)
 }
 
 .nav li {
   display: inline-block;
-  vertical-align: top;
-  padding-right: 44px;
+  padding-right: 44px
 }
 
-.nav li:last-child {
-  padding-right: 0;
+.index-content-right li:last-child, .nav li:last-child {
+  padding-right: 0
 }
 
 .purchase a {
-  padding-bottom: 7px;
+  padding-bottom: 7px
 }
 
 .user-block {
   max-width: 160px;
   margin-right: 0;
-  text-align: right;
+  text-align: right
 }
 
 .purchase {
@@ -142,45 +142,34 @@ img {
   padding-left: 40px;
   line-height: 30px;
   font-weight: 500;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
-  vertical-align: top;
-}
-
-.purchase:hover {
-  color: #fb565a;
-}
-
-.purchase:active {
-  color: rgba(0, 0, 0, 0.3);
+  vertical-align: top
 }
 
 .purchase::before {
   content: "";
   position: absolute;
   top: 7px;
-  left: 0px;
+  left: 0;
   width: 15px;
   height: 15px;
-  background: transparent url("../img/spritesheet.png") -10px -10px no-repeat;
+  background: url(../img/spritesheet.png) -10px -10px no-repeat;
   background-position: -10px -10px;
-  opacity: 0.3;
+  opacity: .3
 }
-
-
-/* слайдер*/
 
 .slider {
   position: relative;
   clear: both;
   width: 1160px;
   min-height: 431px;
-  margin-bottom: 80px;
+  margin-bottom: 80px
 }
 
 .slider input[type=radio] {
   position: absolute;
-  opacity: 0;
+  opacity: 0
 }
 
 .slider-controls {
@@ -191,7 +180,7 @@ img {
   height: 10px;
   margin-left: -100px;
   text-align: center;
-  z-index: 2;
+  z-index: 2
 }
 
 .slider-controls label {
@@ -200,19 +189,19 @@ img {
   width: 18px;
   height: 18px;
   margin: 0 8px;
-  background: white;
+  background: #fff;
   vertical-align: middle;
   border-radius: 50%;
-  cursor: pointer;
+  cursor: pointer
 }
 
-#btn-1:checked~.slider-controls label[for="btn-1"], #btn-2:checked~.slider-controls label[for="btn-2"], #btn-3:checked~.slider-controls label[for="btn-3"] {
+#btn-1:checked~.slider-controls label[for=btn-1], #btn-2:checked~.slider-controls label[for=btn-2], #btn-3:checked~.slider-controls label[for=btn-3] {
   margin: 0 12px;
-  box-shadow: 0 0 0 5px white;
+  box-shadow: 0 0 0 5px #fff;
   width: 4px;
   height: 4px;
   border: 2px solid #c1c1c1;
-  background: white;
+  background: #fff
 }
 
 .slide {
@@ -222,138 +211,117 @@ img {
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-
-.slide {
-  visibility: hidden;
+  visibility: hidden
 }
 
 .slide:nth-child(1) {
-  background: url("../img/nerds-index-slide1.png") 100% 100% no-repeat;
-  min-height: 431px;
+  background: url(../img/nerds-index-slide1.png) 100% 100% no-repeat;
+  min-height: 431px
 }
 
 .slide:nth-child(2) {
-  background: url("../img/nerds-index-slide2.png") 100% 100% no-repeat;
-  min-height: 431px;
+  background: url(../img/nerds-index-slide2.png) 100% 100% no-repeat;
+  min-height: 431px
 }
 
 .slide:nth-child(3) {
-  background: url("../img/nerds-index-slide3.png") 100% 100% no-repeat;
-  min-height: 431px;
+  background: url(../img/nerds-index-slide3.png) 100% 100% no-repeat;
+  min-height: 431px
 }
 
-#btn-1:checked~.slides .slide:nth-child(1) {
-  visibility: visible;
+#btn-1:checked~.slides .slide:nth-child(1), #btn-2:checked~.slides .slide:nth-child(2), #btn-3:checked~.slides .slide:nth-child(3) {
+  visibility: visible
 }
 
-#btn-2:checked~.slides .slide:nth-child(2) {
-  visibility: visible;
-}
-
-#btn-3:checked~.slides .slide:nth-child(3) {
-  visibility: visible;
-}
-
-.slider-item-title, .catalog-title {
-  margin: 0;
-  margin-top: 78px;
+.catalog-title, .slider-item-title {
+  margin: 78px 0 0;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  color: #000000;
+  color: #000
 }
 
 .slider-item {
-  margin: 0;
-  margin-top: 25px;
-  margin-bottom: 40px;
-  font: inherit;
+  margin: 25px 0 40px;
+  font: inherit
 }
 
 .slider .btn {
-  width: 240px;
+  width: 240px
 }
 
-
-/* features*/
-
 .features {
-  margin-bottom: 80px;
+  margin-bottom: 80px
 }
 
 .features-item {
   float: left;
   width: 360px;
-  margin-right: 40px;
+  margin-right: 40px
 }
 
 .features-item:last-child {
-  margin-right: 0;
+  margin-right: 0
 }
 
-.features-item-red, .features-item-green, .features-item-yellow {
-  margin-bottom: 25px;
+.features-item-green, .features-item-red, .features-item-yellow {
+  margin-bottom: 25px
 }
 
 .features-name {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
+  color: #000;
+  text-transform: uppercase
 }
 
 .features-item p {
-  margin: 16px 0 32px 0;
+  margin: 16px 0 32px;
   width: 260px;
-  font: inherit;
+  font: inherit
 }
 
-.btn-red {
-  width: 160px;
+.btn-green, .btn-red {
+  width: 160px
 }
 
 .btn-green {
-  width: 160px;
-  background: #00ca74;
+  background: #00ca74
 }
 
 .btn-green:hover {
-  background: #00bc6c;
+  background: #00bc6c
 }
 
 .btn-green:active {
-  color: rgba(255, 255, 255, 0.3);
-  background: #00aa62;
+  color: rgba(255, 255, 255, .3);
+  background: #00aa62
 }
 
 .btn-yellow {
   width: 160px;
-  background: #efc849;
+  background: #efc849
 }
 
 .btn-yellow:hover {
-  background: #eab534;
+  background: #eab534
 }
 
 .btn-yellow:active {
-  color: rgba(255, 255, 255, 0.3);
-  background: #e5a722;
+  color: rgba(255, 255, 255, .3);
+  background: #e5a722
 }
-
-
-/*index-content*/
 
 .index-content {
   margin-bottom: 56px;
-  border-top: 2px solid #f4f4f4;
+  border-top: 2px solid #f4f4f4
 }
 
 .index-content-left {
   float: left;
   width: 760px;
-  margin-top: 72px;
+  margin-top: 72px
 }
 
 .index-content-title {
@@ -361,32 +329,29 @@ img {
   font-size: 45px;
   line-height: 47px;
   font-weight: 500;
-  color: #000000;
+  color: #000
 }
 
 .index-content-left p {
-  margin: 0;
-  margin-top: 30px;
-  margin-bottom: 47px;
+  margin: 30px 0 47px;
   width: 650px;
-  line-height: 24px;
+  line-height: 24px
 }
 
 .index-list-name {
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .index-content-left ul {
-  margin: 0;
-  margin-top: 14px;
+  margin: 14px 0 0;
   padding-left: 35px;
   list-style-type: none;
-  line-height: 47px;
+  line-height: 47px
 }
 
 .index-content-left li {
-  position: relative;
+  position: relative
 }
 
 .index-content-left li::before {
@@ -397,18 +362,18 @@ img {
   left: -35px;
   top: 17px;
   transform: translateY(-50%);
-  background: #fb565a;
+  background: #fb565a
 }
 
 .index-content-right {
   float: right;
   width: 360px;
   padding-top: 40px;
-  font-size: 0px;
+  font-size: 0
 }
 
 .index-content-right p {
-  margin: 0;
+  margin: 0
 }
 
 .index-content-data {
@@ -417,25 +382,21 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: #000;
   padding-top: 36px;
-  padding-bottom: 30px;
+  padding-bottom: 30px
 }
 
-.index-content-right ul {
+.clients-logo ul, .index-content-right ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style-type: none
 }
 
-.index-content-right li {
+.clients-logo li, .index-content-right li {
   display: inline-block;
   vertical-align: top;
-  width: 120px;
-}
-
-.index-content-right li:last-child {
-  padding-right: 0;
+  width: 120px
 }
 
 .index-content-data-show {
@@ -443,50 +404,40 @@ img {
   line-height: 45px;
   font-weight: 700;
   padding-bottom: 20px;
-  vertical-align: top;
+  vertical-align: top
 }
 
 .sup {
   vertical-align: super;
-  font-size: 27px;
+  font-size: 27px
 }
 
 .index-content-data-description {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 18px
 }
-
-
-/* logos*/
 
 .clients-logo {
   border-top: 2px solid #f4f4f4;
   border-bottom: 2px solid #f4f4f4;
-  font-size: 0px;
-  margin-bottom: 78px;
-}
-
-.clients-logo ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  font-size: 0;
+  margin-bottom: 78px
 }
 
 .clients-logo li {
   position: relative;
-  display: inline-block;
   vertical-align: middle;
   width: 25%;
   text-align: center;
-  opacity: 0.2;
+  opacity: .2
 }
 
 .clients-logo li:hover {
-  opacity: 1;
+  opacity: 1
 }
 
 .clients-logo li:active {
-  opacity: 0.1;
+  opacity: .1
 }
 
 .clients-logo li:not(:first-child)::before {
@@ -497,37 +448,34 @@ img {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: #000000;
+  background: #000
 }
 
 .clients-logo li:hover::before {
-  opacity: 0.2;
+  opacity: .2
 }
 
-.clients-logo li:active::before {
-  opacity: 1;
+.clients-logo li:active::before, input[type=radio]+label:hover::before {
+  opacity: 1
 }
-
-
-/* contacts*/
 
 .map {
   position: relative;
   margin: 0 auto;
-  background: url("../img/map.png") 50% 50% no-repeat;
-  min-height: 416px;
+  background: url(../img/map.png) 50% 50% no-repeat;
+  min-height: 416px
 }
 
 .map .container {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%)
 }
 
 .map-wrapper {
   width: 100%;
-  height: 416px;
+  height: 416px
 }
 
 .map-contacts {
@@ -536,38 +484,33 @@ img {
   top: 54px;
   width: 220px;
   padding: 50px;
-  background: #ffffff;
-  color: #000000;
+  background: #fff;
+  color: #000
 }
 
 .map-contacts-title {
-  margin: 0;
-  margin-bottom: 23px;
+  margin: 0 0 23px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .map-contacts-address, .map-contacts-phone {
-  margin: 0;
-  margin-bottom: 17px;
+  margin: 0 0 17px;
   line-height: 18px;
-  color: #666666;
+  color: #666
 }
 
 .map-contacts-phone {
-  margin-bottom: 38px;
+  margin: 0 0 38px
 }
-
-
-/* footer*/
 
 .footer-social {
   float: left;
   width: 300px;
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 70px
 }
 
 .social-btn {
@@ -579,7 +522,7 @@ img {
   border-radius: 50%;
   margin-right: 7px;
   font-size: 0;
-  background: #e1e1e1;
+  background: #e1e1e1
 }
 
 .social-btn::before {
@@ -588,87 +531,79 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: url(../img/spritesheet.png) no-repeat
 }
 
 .social-btn-vk::before {
   width: 26px;
   height: 15px;
-  background-position: -10px -304px;
+  background-position: -10px -304px
 }
 
 .social-btn-fb::before {
   width: 12px;
   height: 22px;
-  background-position: -10px -131px;
+  background-position: -10px -131px
 }
 
 .social-btn-inst::before {
   width: 21px;
   height: 21px;
-  background-position: -10px -173px;
+  background-position: -10px -173px
 }
 
 .social-btn:hover {
-  background: #e74246;
+  background: #e74246
 }
 
 .social-btn:active {
   background: #d7373b;
-  box-shadow: inset 0px 3px 0px rgba(0, 0, 0, 0.1);
-}
-
-.social-btn:active::before {
-  opacity: 0.3;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, .1)
 }
 
 .footer-info {
   float: right;
   width: 760px;
-  margin-top: 76px;
+  margin-top: 76px
 }
 
 .footer-info-title {
-  margin: 0;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
-  color: #000000;
-  margin-bottom: 9px;
+  color: #000;
+  margin: 0 0 9px
 }
 
 .footer-info-description {
   margin: 0;
   line-height: 22px;
-  color: #444444;
+  color: #444
 }
 
-
-/*каталог*/
-
 .active {
-  border-bottom: #fb565a solid 2px;
+  border-bottom: #fb565a solid 2px
 }
 
 .catalog-header {
   margin-bottom: 55px;
-  background: #eeeeee;
+  background: #eee
 }
 
 .catalog-title {
   clear: both;
   padding-top: 78px;
   padding-bottom: 108px;
-  text-align: center;
+  text-align: center
 }
 
 .catalog-content {
   float: right;
-  width: 760px;
+  width: 760px
 }
 
 .catalog-wrapper {
-  font-size: 0;
+  font-size: 0
 }
 
 .catalog-item {
@@ -681,15 +616,15 @@ img {
   margin-bottom: 34px;
   font-size: 16px;
   border-radius: 5px 5px 0 0;
-  border: rgba(77, 77, 77, 0.1) 1px solid;
+  border: rgba(77, 77, 77, .1) 1px solid
 }
 
 .catalog-item:nth-child(2n) {
-  margin-right: 0;
+  margin-right: 0
 }
 
 .catalog-item:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, .25)
 }
 
 .catalog-item-header {
@@ -697,15 +632,12 @@ img {
   height: 40px;
   text-align: left;
   border-radius: 5px 5px 0 0;
-  background: rgba(77, 77, 77, 0.1);
+  background: rgba(77, 77, 77, .1)
 }
 
 .catalog-item:hover .catalog-item-header {
-  background: rgba(77, 77, 77, 1);
+  background: #4d4d4d
 }
-
-
-/* браузер элементов каталога */
 
 .catalog-item-header span {
   display: inline-block;
@@ -714,20 +646,17 @@ img {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #ffffff;
+  background: #fff
 }
 
 .catalog-item-header span:first-child {
-  margin-left: 16px;
+  margin-left: 16px
 }
 
 .btn-catalog-info {
   margin-left: 20px;
-  width: 200px;
+  width: 200px
 }
-
-
-/* всплывающая подпись элемента каталога */
 
 .catalog-info {
   box-sizing: border-box;
@@ -736,18 +665,18 @@ img {
   bottom: 0;
   left: 0;
   width: 360px;
-  padding: 28px 60px 46px 60px;
-  background: #eeeeee;
+  padding: 28px 60px 46px;
+  background: #eee
 }
 
 .catalog-item .catalog-info {
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden
 }
 
 .catalog-item:hover .catalog-info {
   opacity: 1;
-  visibility: visible;
+  visibility: visible
 }
 
 .catalog-info-title {
@@ -755,54 +684,48 @@ img {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
+  color: #000;
+  text-transform: uppercase
 }
 
 .catalog-info-description {
   margin: 0;
-  padding: 15px 0 30px 0;
+  padding: 15px 0 30px;
   line-height: 18px;
-  color: #666666;
+  color: #666
 }
-
-
-/* фильтры */
 
 .filter-form-title {
   margin: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
+  color: #000;
+  text-transform: uppercase
 }
 
 .btn-filter {
   margin-top: 46px;
-  color: #000000;
-  background: #eeeeee;
+  color: #000;
+  background: #eee;
   width: 260px;
-  border: none;
+  border: none
 }
 
 .btn-filter:hover {
-  background: #dfdfdf;
+  background: #dfdfdf
 }
 
 .btn-filter:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, .3);
   background: #d5d5d5;
-  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, .1)
 }
-
-
-/* фильтр стоимость */
 
 .range-filter {
   width: 260px;
   margin-top: 50px;
-  margin-bottom: 55px;
+  margin-bottom: 55px
 }
 
 .range-controls {
@@ -813,54 +736,54 @@ img {
   padding-left: 20px;
   margin-bottom: 15px;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: #f1f1f1
 }
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: #d7dcde
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: #00ca74;
+  background: #00ca74
 }
 
 .range-controls .toggle {
   position: absolute;
   top: 30px;
-  left: 0px;
+  left: 0;
   width: 4px;
   height: 4px;
   cursor: pointer;
   border: 8px solid #fff;
   border-radius: 50%;
   background: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 #cfcfcf
 }
 
 .range-controls .toggle-min {
-  left: 15px;
+  left: 15px
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 160px
 }
 
 .price-controls {
-  font-size: 0;
+  font-size: 0
 }
 
 .price-controls label {
   font-size: 16px;
   display: inline-block;
   width: 50%;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .max-price {
-  text-align: right;
+  text-align: right
 }
 
 .price-controls input {
@@ -873,139 +796,115 @@ img {
   color: #283136;
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: #f1f1f1
 }
-
-
-/* фильтры сетка и особенности*/
 
 .filters {
   float: left;
-  width: 260px;
+  width: 260px
 }
 
 .filter-list {
-  margin: 0;
-  margin-bottom: 41px;
+  margin: 0 0 41px;
   padding: 0;
-  list-style: none;
+  list-style: none
 }
 
-input[type="radio"] {
-  display: none;
+input[type=checkbox], input[type=radio] {
+  display: none
 }
 
-input[type="radio"]+label {
+input[type=radio]+label {
   position: relative;
   display: block;
-  margin: 0;
   margin: 12px 0;
   line-height: 28px;
   padding-left: 35px;
   cursor: pointer;
-  color: #283136;
+  color: #283136
 }
 
-input[type="radio"]+label::before {
+input[type=radio]+label::before {
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
   top: 0;
   left: 0;
-  background: white url("../img/spritesheet.png") -10px -10px no-repeat;
+  background: #fff url(../img/spritesheet.png) -10px -10px no-repeat;
   background-position: -10px -214px;
-  opacity: 0.4;
-  cursor: pointer;
+  opacity: .4;
+  cursor: pointer
 }
 
-input[type="radio"]+label:hover::before {
-  opacity: 1;
-}
-
-input[type="radio"]:checked+label::before {
+input[type=radio]:checked+label::before {
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
   top: 0;
   left: 0;
-  background: white url("../img/spritesheet.png") -10px -10px no-repeat;
+  background: #fff url(../img/spritesheet.png) -10px -10px no-repeat;
   background-position: -10px -259px;
-  opacity: 0.4;
-  cursor: pointer;
+  opacity: .4;
+  cursor: pointer
 }
 
-input[type="radio"]:checked+label:hover {
-  color: #000000;
+input[type=checkbox]:checked+label:hover, input[type=radio]:checked+label:hover {
+  color: #000
 }
 
-input[type="radio"]:checked+label:hover::before {
-  opacity: 1;
+input[type=checkbox]:checked+label:hover::before, input[type=radio]:checked+label:hover::before {
+  opacity: 1
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
-input[type="checkbox"]+label {
+input[type=checkbox]+label {
   position: relative;
   display: block;
   margin: 14px 0;
   line-height: 26px;
   padding-left: 35px;
   cursor: pointer;
-  color: #283136;
+  color: #283136
 }
 
-input[type="checkbox"]+label::before {
+input[type=checkbox]+label::before {
   content: "";
   position: absolute;
   width: 27px;
   height: 23px;
   top: 0;
   left: 0;
-  background: white url("../img/spritesheet.png") -10px -10px no-repeat;
+  background: #fff url(../img/spritesheet.png) -10px -10px no-repeat;
   background-position: -10px -45px;
-  opacity: 0.4;
-  cursor: pointer;
+  opacity: .4;
+  cursor: pointer
 }
 
-input[type="checkbox"]+label:hover::before {
-  opacity: 1;
+input[type=checkbox]+label:hover::before {
+  opacity: 1
 }
 
-input[type="checkbox"]:checked+label::before {
+input[type=checkbox]:checked+label::before {
   content: "";
   position: absolute;
   width: 27px;
   height: 23px;
   top: 0;
   left: 0;
-  background: white url("../img/spritesheet.png") -10px -10px no-repeat;
+  background: #fff url(../img/spritesheet.png) -10px -10px no-repeat;
   background-position: -10px -88px;
-  opacity: 0.4;
-  cursor: pointer;
+  opacity: .4;
+  cursor: pointer
 }
-
-input[type="checkbox"]:checked+label:hover {
-  color: #000000;
-}
-
-input[type="checkbox"]:checked+label:hover::before {
-  opacity: 1;
-}
-
-
-/* сортировка */
 
 .sort {
-  margin-bottom: 50px;
+  margin-bottom: 50px
 }
 
-.sort ul {
+.pagination ul, .sort ul {
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 .sort-parametr-title {
@@ -1014,109 +913,93 @@ input[type="checkbox"]:checked+label:hover::before {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
+  text-transform: uppercase
+}
+
+.pagination li, .sort-parametr li {
+  display: inline-block;
   text-transform: uppercase;
+  cursor: pointer
 }
 
 .sort-parametr li {
   float: right;
-  display: inline-block;
-  vertical-align: middle;
   margin-left: 25px;
   font-size: 14px;
-  font-weight: 400;
   line-height: 30px;
-  color: #000000;
-  opacity: 0.3;
-  text-transform: uppercase;
-  cursor: pointer;
+  color: #000;
+  opacity: .3;
+  vertical-align: middle;
+  font-weight: 400
 }
 
 .sort-parametr li:hover {
-  opacity: 0.6;
+  opacity: .6
 }
 
-.sort-parametr li:active {
-  opacity: 1;
+.sort-parametr .sort-active, .sort-parametr li:active {
+  opacity: 1
 }
 
-.sort-parametr .sort-active {
-  opacity: 1;
+.sort-marker-down, .sort-marker-up {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent
 }
 
 .sort-marker-up {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: -3px;
-  width: 0;
-  height: 0;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-bottom: 8px solid #000000;
+  border-bottom: 8px solid #000;
+  margin-left: -3px
 }
 
 .sort-marker-down {
-  display: inline-block;
-  vertical-align: middle;
   margin-left: 26px;
-  width: 0;
-  height: 0;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 8px solid #000000;
+  border-top: 8px solid #000
 }
 
 .pagination ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  list-style: none
 }
 
 .pagination li {
-  display: inline-block;
   vertical-align: top;
-  margin: 24px 7px 0px 0;
+  margin: 24px 7px 0 0;
   padding: 13px 0;
   width: 50px;
   border-radius: 5px;
   font-weight: 500;
   text-align: center;
-  text-transform: uppercase;
-  background: #eeeeee;
-  cursor: pointer;
+  background: #eee
 }
 
 .pagination li:last-child {
   width: 260px;
-  margin-bottom: 60px;
+  margin-bottom: 60px
 }
 
 .pagination li:hover {
-  background: #dfdfdf;
+  background: #dfdfdf
 }
 
 .pagination li:active {
   background: #d5d5d5;
-  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, .1)
 }
 
 .pagination .pagination-active {
   width: 44px;
   padding: 10px 0;
   border: #dbdbdb 3px solid;
-  background: white;
+  background: #fff
 }
 
 .pagination li a {
-  color: #000000;
+  color: #000
 }
-
-.pagination li:active a {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-
-/* модальное окно*/
 
 .modal-write-us {
   display: none;
@@ -1126,14 +1009,14 @@ input[type="checkbox"]:checked+label:hover::before {
   z-index: 20;
   width: 760px;
   margin-left: -480px;
-  padding: 68px 100px 85px 100px;
-  color: #000000;
-  background: white;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  padding: 68px 100px 85px;
+  color: #000;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .75)
 }
 
 .modal-write-us-show {
-  display: block;
+  display: block
 }
 
 .modal-write-us-close {
@@ -1146,80 +1029,76 @@ input[type="checkbox"]:checked+label:hover::before {
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  opacity: 0.3;
+  opacity: .3
 }
 
-.modal-write-us-close::before, .modal-write-us-close::after {
+.modal-write-us-close::after, .modal-write-us-close::before {
   content: "";
   position: absolute;
   top: 8px;
   left: -2px;
   width: 25px;
   height: 5px;
-  background-color: #fb565a;
+  background-color: #fb565a
 }
 
 .modal-write-us-close::before {
-  transform: rotate(45deg);
+  transform: rotate(45deg)
 }
 
 .modal-write-us-close::after {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg)
 }
 
 .modal-write-us-title {
   margin: 0;
   font-size: 45px;
   line-height: 45px;
-  color: #000000;
+  color: #000
 }
 
 .write-us-form {
-  margin-top: 45px;
+  margin-top: 45px
 }
 
 .write-us-form label {
   display: inline-block;
   vertical-align: top;
-  width: 360px;
+  width: 360px
 }
 
 .write-us-form label:first-child {
-  margin-right: 36px;
+  margin-right: 36px
 }
 
-.write-us-form input[type="text"], .write-us-form textarea[name="post"] {
+.write-us-form input[type=text], .write-us-form textarea[name=post] {
   width: 326px;
   margin-top: 10px;
   margin-bottom: 35px;
-  padding: 15px 15px;
+  padding: 15px;
   border: #d7dcde solid 2px;
   border-radius: 5px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Roboto", "Arial", sans-serif;
-  color: #444444;
+  color: #444
 }
 
-.write-us-form textarea[name="post"] {
+.write-us-form textarea[name=post] {
   width: 726px;
-  margin-bottom: 47px;
+  margin-bottom: 47px
 }
 
-.write-us-form input[type="text"]:hover {
-  border: #b4b9bb solid 2px;
+.write-us-form input[type=text]:hover {
+  border: #b4b9bb solid 2px
 }
 
-.write-us-form input[type="text"]:focus {
-  border: #000000 solid 2px;
+.write-us-form input[type=text]:focus {
+  border: #000 solid 2px
 }
 
-.write-us-form textarea[name="post"]:hover {
-  border: #b4b9bb solid 2px;
-}
-
-.write-us-form textarea[name="post"]:hover {
-  border: #000000 solid 2px;
+.write-us-form textarea[name=post]:hover {
+  border: #000 solid 2px
 }
 
 .write-us-form span {
@@ -1228,11 +1107,11 @@ input[type="checkbox"]:checked+label:hover::before {
   line-height: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 700;
-  color: #000000;
+  color: #000
 }
 
 .btn-write-us-form {
   font: inherit;
   width: 260px;
-  border: none;
+  border: none
 }

@@ -4,10 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс каталог</title>
-  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script src="icon_customImage.js" type="text/javascript"></script>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -63,10 +61,10 @@
           </div>
         </div>
 
-        <p class="filter-form-title">Сетка</p>
+        <p class="filter-form-title">Сетка:</p>
         <ul class="filter-list">
           <li>
-            <input type="radio" name="grid-type" value="Адаптивная" id="adapt">
+            <input type="radio" name="grid-type" value="Адаптивная" id="adapt" checked="">
             <label for="adapt">Адаптивная</label>
           </li>
           <li>
@@ -78,7 +76,7 @@
             <label for="fluid">Резиновая</label>
           </li>
         </ul>
-        <p class="filter-form-title">Особенности</p>
+        <p class="filter-form-title">Особенности:</p>
         <ul class="filter-list">
           <li>
             <input type="checkbox" name="slider" value="" id="slider" checked="">
@@ -89,7 +87,7 @@
             <label for="benefit">Блок преимуществ</label>
           </li>
           <li>
-            <input type="checkbox" name="news" value="" id="news">
+            <input type="checkbox" name="news" value="" id="news" checked="">
             <label for="news">Новости</label>
           </li>
           <li>
@@ -232,6 +230,32 @@
       </section>
     </div>
   </footer>
+
+
+  <div class="modal-write-us">
+    <button class="modal-write-us-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-write-us-title">Напишите нам</h2>
+    <a href="#"></a>
+
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <label for="write-name">
+              <span class="write">Ваше имя</span>
+              <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" id="write-name">
+            </label>
+      <label for="write-mail">
+              <span>Ваш e-mail</span>
+              <input type="text" name="text" value="" placeholder="Для отправки ответа" id="write-mail">
+            </label>
+      <label for="write-post">
+              <span>Текст письма</span>
+              <textarea name="post" id="write-post" rows="5" placeholder="В свободной форме"></textarea>
+            </label>
+      <button class="btn btn-write-us-form" type="submit">Отправить</button>
+    </form>
+  </div>
+
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
