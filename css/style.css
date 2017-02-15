@@ -923,13 +923,15 @@ input[type="radio"]+label:hover::before {
   opacity: 1;
 }
 
-input[type="radio"]+label:disabled {
+input[type="radio"]:disabled+label::before,
+input[type="radio"]:disabled+label:hover::before {
   opacity: 0.3;
 }
-
-input[type="radio"]+label:disabled::before {
-  opacity: 0.1;
+input[type="radio"]:disabled+label,
+input[type="radio"]:disabled+label:hover{
+  opacity: 0.2;
 }
+
 
 input[type="radio"]:checked+label::before {
   content: "";
@@ -950,14 +952,6 @@ input[type="radio"]:checked+label:hover {
 
 input[type="radio"]:checked+label:hover::before {
   opacity: 1;
-}
-
-input[type="radio"]:checked+label:disabled {
-  opacity: 0.3;
-}
-
-input[type="radio"]:checked+label:disabled::before {
-  opacity: 0.1;
 }
 
 input[type="checkbox"] {
@@ -991,13 +985,6 @@ input[type="checkbox"]+label:hover::before {
   opacity: 1;
 }
 
-input[type="checkbox"]+label:disabled {
-  opacity: 0.3;
-}
-
-input[type="checkbox"]+label:disabled::before {
-  opacity: 0.1;
-}
 
 input[type="checkbox"]:checked+label::before {
   content: "";
@@ -1019,15 +1006,14 @@ input[type="checkbox"]:checked+label:hover {
 input[type="checkbox"]:checked+label:hover::before {
   opacity: 1;
 }
-
-input[type="checkbox"]:checked+label:disabled {
+input[type="checkbox"]:disabled+label::before,
+input[type="checkbox"]:disabled+label:hover::before {
   opacity: 0.3;
 }
-
-input[type="checkbox"]:checked+label:disabled::before {
-  opacity: 0.1;
+input[type="checkbox"]:disabled+label,
+input[type="checkbox"]:disabled+label:hover{
+  opacity: 0.2;
 }
-
 
 /* сортировка */
 
