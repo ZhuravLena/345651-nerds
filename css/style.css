@@ -923,6 +923,14 @@ input[type="radio"]+label:hover::before {
   opacity: 1;
 }
 
+input[type="radio"]+label:disabled {
+  opacity: 0.3;
+}
+
+input[type="radio"]+label:disabled::before {
+  opacity: 0.1;
+}
+
 input[type="radio"]:checked+label::before {
   content: "";
   position: absolute;
@@ -942,6 +950,14 @@ input[type="radio"]:checked+label:hover {
 
 input[type="radio"]:checked+label:hover::before {
   opacity: 1;
+}
+
+input[type="radio"]:checked+label:disabled {
+  opacity: 0.3;
+}
+
+input[type="radio"]:checked+label:disabled::before {
+  opacity: 0.1;
 }
 
 input[type="checkbox"] {
@@ -975,6 +991,14 @@ input[type="checkbox"]+label:hover::before {
   opacity: 1;
 }
 
+input[type="checkbox"]+label:disabled {
+  opacity: 0.3;
+}
+
+input[type="checkbox"]+label:disabled::before {
+  opacity: 0.1;
+}
+
 input[type="checkbox"]:checked+label::before {
   content: "";
   position: absolute;
@@ -994,6 +1018,14 @@ input[type="checkbox"]:checked+label:hover {
 
 input[type="checkbox"]:checked+label:hover::before {
   opacity: 1;
+}
+
+input[type="checkbox"]:checked+label:disabled {
+  opacity: 0.3;
+}
+
+input[type="checkbox"]:checked+label:disabled::before {
+  opacity: 0.1;
 }
 
 
