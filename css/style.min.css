@@ -837,6 +837,14 @@ input[type=radio]+label::before {
   cursor: pointer
 }
 
+input[type=checkbox]+label:disabled, input[type=radio]+label:disabled {
+  opacity: .3
+}
+
+input[type=radio]+label:disabled::before {
+  opacity: .1
+}
+
 input[type=radio]:checked+label::before {
   content: "";
   position: absolute;
@@ -850,12 +858,20 @@ input[type=radio]:checked+label::before {
   cursor: pointer
 }
 
-input[type=checkbox]:checked+label:hover, input[type=radio]:checked+label:hover {
+input[type=radio]:checked+label:hover {
   color: #000
 }
 
-input[type=checkbox]:checked+label:hover::before, input[type=radio]:checked+label:hover::before {
+input[type=radio]:checked+label:hover::before {
   opacity: 1
+}
+
+input[type=radio]:checked+label:disabled {
+  opacity: .3
+}
+
+input[type=radio]:checked+label:disabled::before {
+  opacity: .1
 }
 
 input[type=checkbox]+label {
@@ -885,6 +901,10 @@ input[type=checkbox]+label:hover::before {
   opacity: 1
 }
 
+input[type=checkbox]+label:disabled::before {
+  opacity: .1
+}
+
 input[type=checkbox]:checked+label::before {
   content: "";
   position: absolute;
@@ -896,6 +916,22 @@ input[type=checkbox]:checked+label::before {
   background-position: -10px -88px;
   opacity: .4;
   cursor: pointer
+}
+
+input[type=checkbox]:checked+label:hover {
+  color: #000
+}
+
+input[type=checkbox]:checked+label:hover::before {
+  opacity: 1
+}
+
+input[type=checkbox]:checked+label:disabled {
+  opacity: .3
+}
+
+input[type=checkbox]:checked+label:disabled::before {
+  opacity: .1
 }
 
 .sort {
