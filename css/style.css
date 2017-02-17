@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -42,7 +42,7 @@ img {
   margin: 0;
   padding: 16px 0;
   border-radius: 5px;
-  font-family: 'Roboto', "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -67,6 +67,7 @@ img {
 /* header*/
 
 .main-header {
+  min-width: 1160px;
   background: #eeeeee;
 }
 
@@ -221,7 +222,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .slide {
@@ -255,20 +256,34 @@ img {
   visibility: visible;
 }
 
-.slider-item-title, .catalog-title {
+.slider-item-title {
   margin: 0;
   margin-top: 78px;
+  width: 560px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000000;
 }
 
+.slide:nth-child(3) .slider-item-title {
+  width: 430px;
+}
+
 .slider-item {
   margin: 0;
   margin-top: 25px;
   margin-bottom: 40px;
+  width: 420px;
   font: inherit;
+}
+
+.slider-item span {
+  display: block;
+}
+
+.slide:nth-child(3) .slider-item {
+  width: 360px;
 }
 
 .slider .btn {
@@ -346,7 +361,7 @@ img {
 /*index-content*/
 
 .index-content {
-  margin-bottom: 56px;
+  margin-bottom: 62px;
   border-top: 2px solid #f4f4f4;
 }
 
@@ -367,7 +382,7 @@ img {
 .index-content-left p {
   margin: 0;
   margin-top: 30px;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
   width: 650px;
   line-height: 24px;
 }
@@ -379,7 +394,7 @@ img {
 
 .index-content-left ul {
   margin: 0;
-  margin-top: 14px;
+  margin-top: 13px;
   padding-left: 35px;
   list-style-type: none;
   line-height: 47px;
@@ -395,7 +410,7 @@ img {
   width: 25px;
   height: 2px;
   left: -35px;
-  top: 17px;
+  top: 23px;
   transform: translateY(-50%);
   background: #fb565a;
 }
@@ -463,7 +478,7 @@ img {
   border-top: 2px solid #f4f4f4;
   border-bottom: 2px solid #f4f4f4;
   font-size: 0px;
-  margin-bottom: 78px;
+  margin-bottom: 81px;
 }
 
 .clients-logo ul {
@@ -476,9 +491,18 @@ img {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 25%;
+  width: 210px;
+  padding: 52px 45px 42px 25px;
   text-align: center;
   opacity: 0.2;
+}
+
+.clients-logo li:nth-child(2), .clients-logo li:nth-child(3) {
+  padding: 48px 45px 42px 45px;
+}
+
+.clients-logo li:nth-child(4) {
+  padding: 50px 0 42px 45px;
 }
 
 .clients-logo li:hover {
@@ -514,7 +538,8 @@ img {
 .map {
   position: relative;
   margin: 0 auto;
-  background: url("../img/map.png") 50% 50% no-repeat;
+  background: #f1efe8 url("../img/map.png") 50% 50% no-repeat;
+  min-width: 1160px;
   min-height: 416px;
 }
 
@@ -535,14 +560,14 @@ img {
   z-index: 5;
   top: 54px;
   width: 220px;
-  padding: 50px;
+  padding: 50px 50px 48px 50px;
   background: #ffffff;
   color: #000000;
 }
 
 .map-contacts-title {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -552,6 +577,7 @@ img {
 .map-contacts-address, .map-contacts-phone {
   margin: 0;
   margin-bottom: 17px;
+  width: 205px;
   line-height: 18px;
   color: #666666;
 }
@@ -639,7 +665,7 @@ img {
 
 .footer-info-description {
   margin: 0;
-  line-height: 22px;
+  line-height: 23px;
   color: #444444;
 }
 
@@ -651,6 +677,7 @@ img {
 }
 
 .catalog-header {
+  min-width: 1160px;
   margin-bottom: 55px;
   background: #eeeeee;
 }
@@ -660,6 +687,12 @@ img {
   padding-top: 78px;
   padding-bottom: 108px;
   text-align: center;
+  margin: 0;
+  margin-top: 78px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
 }
 
 .catalog-content {
@@ -759,11 +792,19 @@ img {
   text-transform: uppercase;
 }
 
+.catalog-item:nth-child(1):hover .catalog-info-description, .catalog-item:nth-child(3):hover .catalog-info-description, .catalog-item:nth-child(4):hover .catalog-info-description {
+  padding: 15px 20px 30px;
+}
+
 .catalog-info-description {
   margin: 0;
   padding: 15px 0 30px 0;
   line-height: 18px;
   color: #666666;
+}
+
+.slide:nth-child(3) .slider-item-title {
+  width: 430px;
 }
 
 
@@ -864,7 +905,7 @@ img {
 }
 
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   width: 60px;
   margin-left: 10px;
@@ -923,15 +964,13 @@ input[type="radio"]+label:hover::before {
   opacity: 1;
 }
 
-input[type="radio"]:disabled+label::before,
-input[type="radio"]:disabled+label:hover::before {
+input[type="radio"]:disabled+label::before, input[type="radio"]:disabled+label:hover::before {
   opacity: 0.3;
 }
-input[type="radio"]:disabled+label,
-input[type="radio"]:disabled+label:hover{
+
+input[type="radio"]:disabled+label, input[type="radio"]:disabled+label:hover {
   opacity: 0.2;
 }
-
 
 input[type="radio"]:checked+label::before {
   content: "";
@@ -985,7 +1024,6 @@ input[type="checkbox"]+label:hover::before {
   opacity: 1;
 }
 
-
 input[type="checkbox"]:checked+label::before {
   content: "";
   position: absolute;
@@ -1006,14 +1044,15 @@ input[type="checkbox"]:checked+label:hover {
 input[type="checkbox"]:checked+label:hover::before {
   opacity: 1;
 }
-input[type="checkbox"]:disabled+label::before,
-input[type="checkbox"]:disabled+label:hover::before {
+
+input[type="checkbox"]:disabled+label::before, input[type="checkbox"]:disabled+label:hover::before {
   opacity: 0.3;
 }
-input[type="checkbox"]:disabled+label,
-input[type="checkbox"]:disabled+label:hover{
+
+input[type="checkbox"]:disabled+label, input[type="checkbox"]:disabled+label:hover {
   opacity: 0.2;
 }
+
 
 /* сортировка */
 
@@ -1136,6 +1175,21 @@ input[type="checkbox"]:disabled+label:hover{
 
 /* модальное окно*/
 
+@keyframes bounce {
+  0% {
+    transform: translateY(5000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal-write-us {
   display: none;
   position: fixed;
@@ -1152,6 +1206,7 @@ input[type="checkbox"]:disabled+label:hover{
 
 .modal-write-us-show {
   display: block;
+  animation: bounce 0.5s;
 }
 
 .modal-write-us-close {
